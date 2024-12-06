@@ -10,7 +10,7 @@ function count_rec_str(array $arr, string $str)
     return $result;
 }
 
-function count_str_recursive(array $arr, string $str, int $depth, array &$result)
+function count_str_recursive($arr, $str, $depth, &$result)
 {
     if (!isset($result[$depth])) {
         $result[$depth] = 0;
